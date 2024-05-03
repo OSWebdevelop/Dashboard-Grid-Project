@@ -55,7 +55,6 @@ body{
 
   display: grid;
   grid-template-rows: 100px repeat(2,1fr);
-  gap: 30px;
 }
 .sidebar__logo-container{
   display: flex;
@@ -71,6 +70,12 @@ body{
 }
 .sidebar__link i{
   margin-right: 1.5rem;
+}
+.sidebar__link{
+  transition: 0.3s ease;
+}
+.sidebar__link:hover{
+  color: var(--primary-bright-orange);
 }
 /* main */
 main{
@@ -93,6 +98,7 @@ main{
   display: flex;
   align-items: center;
   gap: 1rem;
+  width: 60%;
 }
 .header__top__search-bar i{
   font-size: 1.5rem;
@@ -102,15 +108,21 @@ main{
   padding: 0.585rem;
   border: none;
   border-radius: 7777777px;
-  width: 700px;
+  width: 100%;
 }
 .header__top__right-links{
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .header__top__right-links i{
+  cursor: pointer;
   font-size: 1.5rem;
+  transition: 0.3s ease-in;
+}
+.header__top__right-links i:hover{
+  color: var(--primary-bright-orange);
+  transform: rotate(15deg);
 }
 .header__top__right-links .user-icon{
   width: 50px;
@@ -147,12 +159,13 @@ main{
   margin-right: 1rem;
   border: none;
   border-radius: 20000000px;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in;
 }
 .header__bot__btn:hover{
   cursor: progress;
   transform: scale(1.075);
-  background-color: #158ac9;
+  background-color: var(--primary-bright-orange);
+  font-weight: 500;
 }
 /* hero */
 .hero{
@@ -185,6 +198,7 @@ main{
   display: grid;
   /* grid-template-columns: repeat(auto-fit,minmax(350px,1fr)); */
   grid-template-columns: repeat(2, minmax(350px,1fr));
+  grid-auto-rows: 1fr;
   gap: 1.5rem;
 }
 .projects__card{
@@ -199,8 +213,13 @@ main{
   font-size: var(--font-normal);
 }
 .projects__card i{
+  cursor: pointer;
   font-size: 1.5rem;
   margin-left: 1rem;
+  transition: 0.3s ease-in;
+}
+.projects__card i:hover{
+  color: var(--primary-bright-orange);
 }
 .projects__card-bot-content{
   align-self: flex-end;
@@ -247,6 +266,10 @@ main{
   height: 60px;
   object-fit: cover;
   border-radius: 100%;
+  transition: 0.3s ease;
+}
+.trending__card .user-icon:hover{
+  object-position: 0px 2px;
 }
 .trending__card div > span:first-child{
   cursor: pointer;
