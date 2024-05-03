@@ -73,10 +73,12 @@ body{
   margin-right: 1.5rem;
 }
 .sidebar__link{
+  padding: 1rem;
+  border-radius: 10px;
   transition: 0.3s ease;
 }
 .sidebar__link:hover{
-  color: var(--primary-bright-orange);
+  background-color: var(--primary-bright-orange);
 }
 /* main */
 main{
@@ -106,10 +108,16 @@ main{
 }
 .header__top__search-bar #search{
   background-color: var(--primary-gray);
-  padding: 0.585rem;
+  padding: 0.585rem 1.5rem;
+  outline: none;
   border: none;
   border-radius: 7777777px;
   width: 100%;
+  transition: 0.3s ease;
+}
+.header__top__search-bar #search:focus{
+  color: #fe833d;
+  font-size: var(--font-normal);
 }
 .header__top__right-links{
   display: flex;
@@ -202,12 +210,14 @@ main{
   gap: 1.5rem;
 }
 /* hero projects */
+.projects__card-top-content{
+  resize: vertical;
+  overflow: auto;
+}
 .projects__card-top-content h3{
   font-size: var(--font-normal);
 }
 .projects__card{
-  resize: vertical;
-  overflow: auto;
   border-left: 10px solid var(--primary-bright-orange);
 
   display: flex;
