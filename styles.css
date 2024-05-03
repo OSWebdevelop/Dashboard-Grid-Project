@@ -154,10 +154,18 @@ main{
   font-size: var(--font-medi);
   margin-left: 1rem;
 }
-.header__bot__left-links .user-icon{
+.icon-container{
   width: 80px;
   height: 80px;
   border-radius: 100%;
+  overflow: hidden;
+}
+.header__bot__left-links .user-icon{
+  transform: scale(100%);
+  transition: 0.3s ease;
+}
+.header__bot__left-links .user-icon:hover{
+  transform: scale(120%);
 }
 .header__bot__btn{
   cursor: pointer;
