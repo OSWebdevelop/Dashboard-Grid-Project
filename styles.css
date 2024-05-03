@@ -48,7 +48,8 @@ body{
 /* sidebar */
 .sidebar{
   color: var(--neutral-white);
-  background-color: var(--primary-bright-blue);
+  background: rgb(88,119,186);
+  background: linear-gradient(180deg, rgba(88,119,186,1) 47%, rgba(100,131,195,1) 100%);
   font-size: var(--font-normal);
   font-weight: 500;
   padding: 1.5rem;
@@ -192,25 +193,27 @@ main{
   display: grid;
   grid-template-rows: 50px 1fr;
   grid-row: 1/3;
-  padding-bottom: 1.5rem;
 }
 .projects__wrapper{
   display: grid;
   /* grid-template-columns: repeat(auto-fit,minmax(350px,1fr)); */
   grid-template-columns: repeat(2, minmax(350px,1fr));
-  grid-auto-rows: 1fr;
+  grid-auto-rows: 300px;
   gap: 1.5rem;
 }
+/* hero projects */
+.projects__card-top-content h3{
+  font-size: var(--font-normal);
+}
 .projects__card{
+  resize: vertical;
+  overflow: auto;
   border-left: 10px solid var(--primary-bright-orange);
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
-}
-.projects__card-top-content h3{
-  font-size: var(--font-normal);
 }
 .projects__card i{
   cursor: pointer;
