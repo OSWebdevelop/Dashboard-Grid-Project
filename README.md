@@ -1,5 +1,5 @@
 # Dashboard-Grid-Project
-## [Preview](https://github.com/OSWebdevelop/Dashboard-Grid-Project.git)
+## [Preview](https://oswebdevelop.github.io/Dashboard-Grid-Project/)
 [![image.png](https://i.postimg.cc/3NLbhmMm/image.png)](https://postimg.cc/q63GXtvv)
 
 Thanks for checking out my admin dashboard project! If you have any advice, I would appreciate it.
